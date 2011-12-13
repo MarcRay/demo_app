@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Contenu:</b>
+  <%= @micromessage.contenu %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @micromessage.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_micromessage_path(@micromessage) %> |
+<%= link_to 'Back', micromessages_path %>

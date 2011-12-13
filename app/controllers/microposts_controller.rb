@@ -44,10 +44,10 @@ class MicropostsController < ApplicationController
 
     respond_to do |format|
       if @micropost.save
-        format.html { redirect_to(@micropost, :notice => 'Micropost was successfully created.') }
+        format.html { redirect_to(@micropost, :notice => 'Micro,essage a ete cree avec succes.') }
         format.xml  { render :xml => @micropost, :status => :created, :location => @micropost }
       else
-        format.html { render :action => "new" }
+        format.html { render :action => "nouveau" }
         format.xml  { render :xml => @micropost.errors, :status => :unprocessable_entity }
       end
     end
@@ -60,10 +60,10 @@ class MicropostsController < ApplicationController
 
     respond_to do |format|
       if @micropost.update_attributes(params[:micropost])
-        format.html { redirect_to(@micropost, :notice => 'Micropost was successfully updated.') }
+        format.html { redirect_to(@micropost, :notice => 'Micromessage a ete mise a jour avec succes.') }
         format.xml  { head :ok }
       else
-        format.html { render :action => "edit" }
+        format.html { render :action => "editer" }
         format.xml  { render :xml => @micropost.errors, :status => :unprocessable_entity }
       end
     end

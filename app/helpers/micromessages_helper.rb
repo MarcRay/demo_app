@@ -1,0 +1,2 @@
+module MicromessagesHelper
+end
