@@ -1,7 +1,7 @@
 <%= form_for(@micromessage) do |f| %>
   <% if @micromessage.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@micromessage.errors.count, "error") %> prohibited this micromessage from being saved:</h2>
+      <h2><%= pluralize(@micromessage.errors.count, "erreur") %> prohibited this micromessage from being saved:</h2>
 
       <ul>
       <% @micromessage.errors.full_messages.each do |msg| %>
@@ -23,3 +23,4 @@
     <%= f.submit %>
   </div>
 <% end %>
+

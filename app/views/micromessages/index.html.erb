@@ -1,9 +1,9 @@
-<h1>Listing micromessages</h1>
+<h1>Liste des micromessages</h1>
 
 <table>
   <tr>
     <th>Contenu</th>
-    <th>User</th>
+    <th>Usager</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,13 +13,14 @@
   <tr>
     <td><%= micromessage.contenu %></td>
     <td><%= micromessage.user_id %></td>
-    <td><%= link_to 'Show', micromessage %></td>
-    <td><%= link_to 'Edit', edit_micromessage_path(micromessage) %></td>
-    <td><%= link_to 'Destroy', micromessage, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Montrer', micromessage %></td>
+    <td><%= link_to 'Editer', edit_micromessage_path(micromessage) %></td>
+    <td><%= link_to 'Detruire', micromessage, :confirm => 'Etes-vous certain ?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Micromessage', new_micromessage_path %>
+<%= link_to 'Nouveau Micromessage', new_micromessage_path %>
+
