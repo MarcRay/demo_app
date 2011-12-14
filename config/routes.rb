@@ -1,7 +1,7 @@
 DemoApp::Application.routes.draw do
   resources :micromessages
 
-  resources :microposts
+#   resources :microposts
 
   resources :users
 

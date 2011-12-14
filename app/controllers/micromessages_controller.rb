@@ -1,7 +1,7 @@
 class MicromessagesController < ApplicationController
   # GET /micromessages
   # GET /micromessages.xml
-  def index
+  def index  
     @micromessages = Micromessage.all
 
     respond_to do |format|
