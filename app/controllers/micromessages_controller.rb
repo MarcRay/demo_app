@@ -44,7 +44,7 @@ class MicromessagesController < ApplicationController
 
     respond_to do |format|
       if @micromessage.save
-        format.html { redirect_to(@micromessage, :notice => 'Micromessage a ete cree avec succes.') }
+        format.html { redirect_to(@micromessage, :notice => 'Micromessage a été créé avec succes.') }
         format.xml  { render :xml => @micromessage, :status => :created, :location => @micromessage }
       else
         format.html { render :action => "Nouveau" }
@@ -60,10 +60,10 @@ class MicromessagesController < ApplicationController
 
     respond_to do |format|
       if @micromessage.update_attributes(params[:micromessage])
-        format.html { redirect_to(@micromessage, :notice => 'Micromessage a ete mise a jour avec succes.') }
+        format.html { redirect_to(@micromessage, :notice => 'Micromessage a été mise a jour avec succes.') }
         format.xml  { head :ok }
       else
-        format.html { render :action => "editer" }
+        format.html { render :action => "éditer" }
         format.xml  { render :xml => @micromessage.errors, :status => :unprocessable_entity }
       end
     end
